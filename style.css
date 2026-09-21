@@ -1,3 +1,6 @@
+body {
+  /* background-color: #0a192f; */
+}
 .brand {
   position: relative;
   display: inline-block;
@@ -17,10 +20,12 @@
   flex-direction: raw;
   font-weight: bold;
   font-size: 18px;
+  height: 50px;
   justify-content: space-between;
   padding-right: 30px;
   background-color: #0a192f;
   margin-bottom: 30px;
+  align-items: center;
 }
 .navigation-bar a {
   color: #d4af37;
@@ -60,7 +65,7 @@ navigation-bar a.active {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.6;
-  border-left: 4px solid #d4af37;
+  /* border-left: 4px solid #d4af37; */
 }
 .services {
   padding: 10px 0;
@@ -80,12 +85,29 @@ navigation-bar a.active {
   border-left: 3px solid #d4af37;
   border-radius: 5px;
 }
+
 .logo {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  padding-left: 20px;
+  width: 150px;
+  height: auto;
 }
+.logo-motto {
+  position: relative;
+}
+.logo-motto p {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+.welcome-area {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 80px;
+  border-left: 4px solid #d4af37;
+}
+
 .youth {
   height: 10%;
   width: 10%;
@@ -94,7 +116,19 @@ navigation-bar a.active {
 ul {
   display: flex;
   list-style: none;
-  gap: 40px;
+  gap: 10px;
   margin: 0;
   padding: 0;
+}
+h1 {
+  color: #d4af37;
+  font-size: 2rem;
+}
+.vision-mission {
+  margin-top: 60px;
+  text-align: center;
+}
+.vision-mission h3 {
+  color: #d4af37;
+  font-size: 24px;
 }
